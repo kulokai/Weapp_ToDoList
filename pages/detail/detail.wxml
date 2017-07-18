@@ -1,0 +1,16 @@
+<!--logs.wxml-->
+<view class="container">
+  <view class="section">
+    <form bindsubmit="formSubmit">
+      <input class="title" placeholder="清单名称" name="title" value="{{thelist.title}}"/>
+      <!--<textarea class="title" name="content" placeholder="清单描述" value="{{thelist.content}}"></textarea >-->
+      <picker bindchange="bindPickerChange" name="type" value="{{index}}" range="{{type}}">
+        <view class="picker">
+          选择标记颜色：{{type_name}}
+        </view>
+      </picker>
+      <button type="primary" form-type="submit" style="margin:18px 10px;"> 保存清单 </button>
+      <button type="warn" style="margin:18px 10px;" bindtap="del"> 删除清单 </button>
+    </form>
+  </view>
+</view>

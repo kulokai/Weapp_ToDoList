@@ -1,0 +1,31 @@
+<view class="container">
+  <view class="head">
+    <image style="width:24vw;height:24vw;" mode="aspectFit" src="/img/face{{rand}}.png"></image>
+    <view>{{user.nickName}}</view>
+  </view>
+
+  <view class="item" style="border-top:1px solid #ddd;">
+   主页显示待完成
+    <view style="float:right;">
+      <switch bindchange="switch1Change" checked="{{settings.noShowFn}}"/>
+    </view>
+  </view>
+  <view class="item" style="display:{{settings.hide}}">
+    开启简约云同步
+    <view style="float:right;">
+      <switch bindchange="switch2Change" checked="{{settings.onUpload}}"/>
+    </view>
+  </view>
+  <view class="item" style="display:{{settings.hide}}">
+    上一次同步时间
+    <view style="float:right;">
+      {{settings.upload_time}}
+    </view>
+  </view>
+  <view class="item" bindtap="clearData">
+    清空所有清单数据
+  </view>
+  <view class="version" bindtap="countTouch">
+    当前版本 1.1.0
+  </view>
+</view>

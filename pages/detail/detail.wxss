@@ -1,0 +1,9 @@
+.title{
+  padding:16px 8px;
+  border-bottom: 1px solid #DADADA;
+  width:100%;
+}
+.picker{
+  padding:16px 8px;
+  border-bottom: 1px solid #DADADA;
+}

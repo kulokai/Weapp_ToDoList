@@ -1,0 +1,21 @@
+<view class="main">
+
+  <view class="p t">
+    使用帮助
+  </view>
+  <view class="p">
+    <view>1. 本工具的首页主要是清单列表和菜单栏；</view>
+    <view>2. 手指在清单项上左划会出现该项的菜单；</view>
+    <view>3. 点击清单项可以修改清单项的内容；</view>
+    <view>4. 工具栏左侧是筛选按钮，可以筛选颜色和状态。</view>
+    <view>5. 菜单栏中间的绿色按钮是创建按钮。</view>
+  </view>
+
+  <view class="p t">
+    关于"简约云清单"
+  </view>
+  <view class="p">
+    "简约云清单" 为用户提供一个简约美观的清单计划工具，努力做一个小而美且实用的小工具。
+  </view>
+  
+</view>

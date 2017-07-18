@@ -1,0 +1,39 @@
+<!--index.wxml-->
+<view class="container">
+
+  <view class="list">
+    <block wx:for="{{list}}" wx:for-item="vo" wx:key="id">
+      <scroll-view class="view-body" scroll-x="true" scroll-left="{{left}}">
+        <view class="item">
+          <view class="content" bindtap="detail" data-id="{{vo.id}}">
+            <view class="type {{vo.type}}"></view>
+            <text class="{{vo.finish}}">{{vo.title}}</text>
+          </view>
+          <view class="menu rd" bindtap="del" data-id="{{vo.id}}">
+            删除
+          </view>
+          <view class="menu lb" bindtap="top" data-id="{{vo.id}}">
+            置顶
+          </view>
+          <view class="menu og {{vo.finish}}" bindtap="finish" data-id="{{vo.id}}">
+            完成
+          </view>
+          <view class="menu og" bindtap="finish" data-id="{{vo.id}}">
+            待完
+          </view>
+        </view>
+      </scroll-view>
+    </block>
+  </view>
+
+  <view class="bottom">
+    <view class="xs {{xs}}" data-index="{{xs_index}}" bindtap="xsPage"></view>
+    <view class="xs xs2 {{xs2}}" data-index="{{xs2_index}}" bindtap="xsPage2">{{xs2}}</view>
+    <view class="add-p">
+      <view class="add" bindtap="toAddPage">+</view>
+    </view>
+    <view class="xs" bindtap="toHelp">帮助</view>
+    <view class="xs" bindtap="toSettings">设置</view>
+  </view>
+
+</view>

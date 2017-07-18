@@ -1,0 +1,16 @@
+.head{
+  margin: 12px 0;
+  text-align: center;
+  padding: 36px 10px;
+  background:#FAFAFA;
+  border-top:1px solid #ddd; 
+  border-bottom:1px solid #ddd; 
+}
+
+.item{
+  padding: 12px 10px;
+  line-height:32px;
+  border-bottom:1px solid #ddd; 
+}
+
+.version{text-align:center;font-size:14px;color:#999;margin-top:24px;}
